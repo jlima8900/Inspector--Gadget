@@ -1,6 +1,6 @@
-                        # 🔍 Inspector-Gadget: 
+# 🔍 Inspector-Gadget
 
-                  The Security & Exposure Detective 🕵️‍♂️
+The Security & Exposure Detective 🕵️‍♂️
 
 Welcome to **Inspector-Gadget**, your all-in-one cybersecurity Swiss Army knife! 🛡️  
 This script investigates firewall rules, container security, and network exposure, making sure your setup isn’t leaking secrets like a spy with a loud mouth.
