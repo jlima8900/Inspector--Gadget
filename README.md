@@ -35,8 +35,7 @@ Inspector-Gadget **automatically generates structured reports** in CSV format:
 ### 🏗 **User Experience & Usability**
 ✔ **Easy-to-Run** – Just execute the script and let it do the work. No config required!  
 ✔ **Color-Coded Output** – Clear visual feedback with ✅ for success and ⚠️ for warnings.  
-✔ **Processing Animation** – Spinner UI while tasks run, making it look sleek.  
-✔ **Parallel Execution** – Runs security checks simultaneously for faster analysis.  
+✔ **Parallel Execution** – Runs security checks simultaneously for faster analysis.
 ✔ **Colloquial & Friendly Messaging** – Makes security insights digestible, even for non-experts.  
 
 ### 🛠 **Security Improvements & Actionable Insights**
