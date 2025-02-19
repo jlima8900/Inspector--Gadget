@@ -8,7 +8,9 @@ If you ever wondered:
 - **“Is my firewall actually working, or is it just a placebo?”**  
 - **“Am I unknowingly hosting a VIP lounge for hackers?”**  
 
-Then **Inspector-Gadget** is your **cyber bodyguard**. It scans, detects, and reports in a way that even your **non-techy boss** can understand.
+Then **Inspector-Gadget** is your personal **cyber Inspector**.
+
+It scans, detects, and reports in a way that even your **non-techy boss** can understand.
 
 ---
 
