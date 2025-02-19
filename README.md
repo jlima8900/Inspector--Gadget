@@ -104,14 +104,6 @@ This project is **free software**, licensed under the **GNU General Public Licen
 
 For the **full legal stuff**, check out the **LICENSE** file.
 
----
-
-## 🤝 **Contributing**  
-
-Want to **add cool features**? **Pull requests are welcome!**  
-Open an **issue**, and let’s **geek out together**. 🤓  
-
----
 
 ## 🎩 **Credits**  
 
