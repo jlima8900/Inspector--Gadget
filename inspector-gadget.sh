@@ -19,6 +19,7 @@
 # Email: jlima8900@hotmail.com
 
 
+
 #!/bin/bash
 
 # ==============================
@@ -171,3 +172,24 @@ echo "📂 $NETWORK_CSV"
 
 echo -e "\n${GREEN}🎯 Security analysis is fully complete!${NC}"
 
+# ==============================
+# 🚀 Load & Run Enhancements
+# ==============================
+
+ENHANCEMENT_SCRIPT="gogo-gadgetO-scan.sh"
+
+if [[ -f "$ENHANCEMENT_SCRIPT" ]]; then
+    echo "🔄 Loading enhancements from $ENHANCEMENT_SCRIPT..."
+    source "$ENHANCEMENT_SCRIPT"
+
+    # Wait for sourcing to complete, then verify function exists
+    sleep 1
+
+    if declare -F run_enhancements >/dev/null; then
+        run_enhancements
+    else
+        echo "❌ Function 'run_enhancements' not found! Check script for errors."
+    fi
+else
+    echo "⚠️ Enhancement script '$ENHANCEMENT_SCRIPT' not found. Skipping enhancements."
+fi
