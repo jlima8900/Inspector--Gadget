@@ -64,11 +64,11 @@ calculate_risk_score() {
     fi
 
     # Apply Risk Score Calculation
-    RISK_SCORE=$((
+    RISK_SCORE=$(( 
         (PRIVILEGED_CONTAINERS * PRIV_WEIGHT) +
         (HIGH_RISK_PORTS * HIGH_PORT_WEIGHT) +
         (NON_STANDARD_PORTS * NON_STANDARD_PORT_WEIGHT) +
-        (NETWORK_EXPOSURES * NETWORK_EXP_WEIGHT)
+        (NETWORK_EXPOSURES * NETWORK_EXP_WEIGHT) 
     ))
 
     # **Ensure Scoring is Out of 100%**
