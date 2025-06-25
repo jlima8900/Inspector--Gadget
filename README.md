@@ -1,192 +1,221 @@
-# Inspector-Gadget – Advanced Security & Exposure Analysis Tool
+# Inspector-Gadget 🛡️
 
-Welcome to Inspector-Gadget, your all-in-one cybersecurity Swiss Army knife! 🛡️
+**Advanced Security & Exposure Analysis Tool**
 
-This comprehensive security suite investigates firewall rules, container security, network exposure, malware threats, rootkits, SSH attacks, and much more, making sure your setup isn't leaking secrets like a spy with a loud mouth.
+Inspector-Gadget is a comprehensive cybersecurity Swiss Army knife designed to investigate firewall rules, container security, and network exposure. This powerful bash script ensures your infrastructure isn't inadvertently exposing secrets or vulnerabilities to potential attackers.
 
-If you ever wondered:
-- "Are my containers running wild without security?"
-- "Is my firewall actually working, or is it just a placebo?"
-- "Am I unknowingly hosting a VIP lounge for hackers?"
-- "Is my server under attack right now?"
-- "Do I have malware or rootkits hiding in my system?"
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Bash](https://img.shields.io/badge/Bash-4.0%2B-green.svg)](https://www.gnu.org/software/bash/)
+[![Linux](https://img.shields.io/badge/OS-Linux-orange.svg)](https://www.kernel.org/)
 
-Then Inspector-Gadget is your personal cyber Inspector and your entire cybersecurity team rolled into one!
+## 🚀 Quick Start
 
-It scans, detects, and reports in a way that even your non-techy boss can understand.
-
-## 🚀 Core Security Analysis Features
-
-✔ **Fail2Ban Analysis** – Extracts a list of blocked IPs and the jails they belong to. 🚪🔒  
-✔ **Firewall Rules Extraction** – Lists active firewalld rules to ensure your defenses are up. 🛑  
-✔ **Iptables Rules Extraction** – Analyzes iptables rules for unexpected openings. 🕵️♂️  
-✔ **Docker Container Security Check** – Reviews running containers, restart policies, and mapped ports. 🐳  
-✔ **Privileged Container Detection** – Identifies containers running with excessive privileges.  
-✔ **Docker Network Exposure Analysis** – Detects whether your containers are unintentionally exposed to the internet. 🌍  
-✔ **Security Risk Scoring** – Dynamically calculates a security risk score based on detected issues. 📊
-
-## 🔥 NEW: GoGoGadget Security Suite Extensions
-
-Inspector-Gadget now includes a complete arsenal of specialized security modules that transform it from a single tool into a **comprehensive cybersecurity platform**:
-
-### 🦠 **Malware Detection & System Integrity**
-- **🦠 ClamAV Scanner** (`gogo-gadgetO-clamav.sh`) – Professional antivirus scanning with real-time detection
-- **🔒 Chkrootkit** (`gogo-gadgetO-chkrootkit.sh`) – Rootkit detection and system integrity verification
-- **🛡️ RKHunter** (`gogo-gadgetO-rkhunter.sh`) – Advanced rootkit hunting with deep system analysis
-
-### 🚨 **Threat Intelligence & SSH Security**
-- **🚨 Sentinel** (`gogo-gadgetO-sentinel.sh`) – SSH threat intelligence with geolocation and TOR detection
-- **📡 SSH Monitor** (`gogo-gadgetO-ssh-monitor.sh`) – Real-time SSH connection tracking and login analysis
-- **🕵️ Lynis Auditor** (`gogo-gadgetO-lynis.sh`) – Professional security auditing and compliance checking
-
-### 📊 **Risk Assessment & Secure Storage**
-- **📊 Risk Scanner** (`gogo-gadgetO-scan.sh`) – Advanced security risk scoring with detailed breakdown
-- **🔐 Vault** (`gogo-gadgetO-vault.sh`) – Secure report encryption and Keeper Vault integration
-
-### 🚀 **Unified Command Center**
-- **🚀 Master Suite** (`gogo-gadgetO-suite.sh`) – Unified launcher for the complete security toolkit
-
-## 📊 Professional Security Reports
-
-Inspector-Gadget automatically generates structured reports in CSV format for further analysis:
-
-### **Core Analysis Reports:**
-📂 **fail2ban_blocked_ips.csv** – List of blocked IPs with associated jails.  
-📂 **firewalld_rules.csv** – Active firewall rules for better policy review.  
-📂 **iptables_rules.csv** – Breakdown of iptables security rules.  
-📂 **container_analysis.csv** – Overview of running containers, restart policies, and exposed ports.  
-📂 **privileged_containers.csv** – Privileged containers that may pose security risks.  
-📂 **network_analysis.csv** – Summary of Docker network connections and externally accessible services.
-
-### **Advanced Threat Intelligence Reports:**
-📂 **ssh_activity_report.csv** – SSH connection logs and access patterns.  
-📂 **gogo-gadgetO-sentinel.csv** – Threat intelligence with geolocation and TOR analysis.  
-📂 **firewall_analysis.log** – Detailed firewall security assessment.  
-📂 **scan_history.log** – Security scan history and trend tracking.
-
-## ✨ What Makes Inspector-Gadget Special
-
-✔ **Easy-to-Run** – Just execute the script and let it do the work. No config required!  
-✔ **Color-Coded Output** – Clear visual feedback with ✅ for success and ❌ for issues  
-✔ **Parallel Execution** – Runs security checks simultaneously for faster analysis.  
-✔ **Interactive Summaries** – Displays structured ASCII tables for better readability.  
-✔ **Security Risk Breakdown** – Final security score provides a quick security assessment.  
-✔ **Threat Intelligence** – Real-time geolocation and TOR exit node detection.  
-✔ **Enterprise Features** – AES256 encryption and secure vault storage.  
-✔ **Cross-Platform** – Works on Ubuntu, Debian, CentOS, RHEL, Fedora, and Arch Linux.
-
-## 🎯 Advanced Security Capabilities
-
-### **🌍 Threat Intelligence Engine**
-- **Geolocation Lookup** – Identifies the geographic location of suspicious IP addresses
-- **TOR Exit Node Detection** – Automatically detects connections from TOR networks via DNS queries
-- **Attack Pattern Analysis** – Time-based filtering to identify coordinated attacks
-- **Historical Trend Tracking** – Monitor security improvements over time
-
-### **🔐 Enterprise-Grade Security**
-- **AES256 Encryption** – Military-grade encryption for sensitive security reports
-- **Keeper Vault Integration** – Secure cloud storage for encrypted reports
-- **Dynamic Risk Scoring** – Sophisticated algorithm weighing multiple security factors
-- **Compliance Reporting** – Generate reports suitable for security audits
-
-### **🧠 Intelligent Analysis**
-- **Dynamic Weight Scaling** – Risk scores adapt based on threat landscape
-- **Cross-Reference Detection** – Correlate findings across multiple security domains
-- **Automated Dependency Installation** – Self-configuring for different Linux distributions
-- **Professional Logging** – Comprehensive audit trails for all security operations
-
-## 🚀 Getting Started
-
-No complicated setup. Just download, run, and enjoy.
-
-### **Quick Start - Core Analysis:**
 ```bash
 git clone https://github.com/jlima8900/Inspector--Gadget.git
 cd Inspector--Gadget
-chmod +x *.sh
+chmod +x inspector-gadget.sh
 sudo ./inspector-gadget.sh
-ls -lah *.csv
 ```
 
-### **🎮 Complete Security Suite:**
+## 🔍 What Inspector-Gadget Analyzes
+
+### Core Security Assessments
+
+- **🚪 Fail2Ban Analysis** - Extracts blocked IPs and associated jails
+- **🛑 Firewall Rules Extraction** - Reviews active firewalld configurations
+- **🕵️ Iptables Rules Analysis** - Identifies unexpected network openings
+- **🐳 Docker Container Security** - Evaluates running containers and security policies
+- **⚠️ Privileged Container Detection** - Flags containers with excessive privileges
+- **🌍 Network Exposure Analysis** - Detects unintentional internet exposure
+- **📊 Security Risk Scoring** - Provides dynamic risk assessment
+
+### Key Questions Answered
+
+- Are my containers running without proper security constraints?
+- Is my firewall configuration actually protecting my system?
+- Am I unknowingly hosting services accessible to attackers?
+- Which containers are running with dangerous privileges?
+- What network services are exposed to the internet?
+
+## 📂 Generated Reports
+
+Inspector-Gadget automatically generates structured CSV reports for detailed analysis:
+
+| Report File | Description |
+|-------------|-------------|
+| `fail2ban_blocked_ips.csv` | Blocked IPs with associated jail information |
+| `firewalld_rules.csv` | Active firewall rules for policy review |
+| `iptables_rules.csv` | Comprehensive iptables security analysis |
+| `container_analysis.csv` | Container overview with restart policies and ports |
+| `privileged_containers.csv` | High-risk privileged container inventory |
+| `network_analysis.csv` | Docker network connections and exposed services |
+
+## ✨ Key Features
+
+### 🎯 **Easy to Use**
+- Zero configuration required
+- Single command execution
+- Automatic report generation
+
+### 🎨 **Clear Visual Feedback**
+- Color-coded output (✅ success, ❌ warnings)
+- Interactive ASCII tables for better readability
+- Structured progress indicators
+
+### ⚡ **High Performance**
+- Parallel execution for faster analysis
+- Optimized security checks
+- Minimal system resource usage
+
+### 📈 **Comprehensive Analysis**
+- Multi-layered security assessment
+- Risk prioritization scoring
+- Actionable insights and recommendations
+
+## 🛠️ System Requirements
+
+- **Operating System**: Linux (Ubuntu, CentOS, RHEL, Debian)
+- **Shell**: Bash 4.0 or higher
+- **Privileges**: Root/sudo access required
+- **Dependencies**: 
+  - `iptables` (for firewall analysis)
+  - `docker` (for container analysis)
+  - `fail2ban` (optional, for IP blocking analysis)
+  - `firewalld` (optional, for firewall rule analysis)
+
+## 📋 Usage Examples
+
+### Basic Security Scan
 ```bash
-# Run the unified security command center
-sudo ./gogo-gadgetO-suite.sh
+sudo ./inspector-gadget.sh
 ```
 
-### **🎯 Individual Module Examples:**
+### Review Generated Reports
 ```bash
-# SSH threat intelligence with geolocation
-sudo ./gogo-gadgetO-sentinel.sh
-
-# Professional malware scan
-sudo ./gogo-gadgetO-clamav.sh
-
-# Advanced security audit
-sudo ./gogo-gadgetO-lynis.sh
-
-# Rootkit detection
-sudo ./gogo-gadgetO-chkrootkit.sh
-
-# Calculate security risk score
-sudo ./gogo-gadgetO-scan.sh
+ls -la *.csv
+cat container_analysis.csv | column -t -s ','
 ```
 
-## 🔍 Use Cases & Benefits
+### Monitor Blocked IPs
+```bash
+cat fail2ban_blocked_ips.csv
+```
 
-### **For Security Professionals:**
-✅ **Threat Hunting** – Identify active attacks and suspicious activities  
-✅ **Incident Response** – Rapid security assessment during breaches  
-✅ **Compliance Auditing** – Generate reports for regulatory requirements  
-✅ **Penetration Testing** – Discover vulnerabilities before attackers do
+## 🚨 What to Do After Running Inspector-Gadget
 
-### **For System Administrators:**
-✅ **Identify Weak Firewall Rules** – Tighten policies based on real findings.  
-✅ **Detect Unsecured Containers** – Flag dangerous configurations before attackers do.  
-✅ **Monitor Attack Sources** – Identify repeated attack sources and proactively block them.  
-✅ **Ensure Network Segmentation** – Avoid exposing services unintentionally.  
-✅ **Evaluate Security Posture** – Prioritize critical security fixes with risk analysis.
+### Immediate Actions
+1. **🚫 Block Suspicious IPs** - Review and extend IP blocking rules
+2. **🔥 Tighten Firewall Rules** - Close unnecessary ports and services
+3. **🔒 Secure Containers** - Remove excessive privileges from containers
+4. **🕸️ Review Network Exposure** - Ensure proper network segmentation
 
-### **For Enterprise Teams:**
-✅ **Security Baseline Monitoring** – Track security improvements over time  
-✅ **Automated Security Reporting** – Generate executive-level security summaries  
-✅ **Multi-Domain Analysis** – Comprehensive view across firewall, containers, and network  
-✅ **Secure Data Handling** – Encrypted storage and enterprise vault integration
+### Risk Mitigation Strategy
+1. **High Risk Items** - Address critical findings immediately
+2. **Medium Risk Items** - Schedule fixes within next maintenance window
+3. **Low Risk Items** - Include in next security review cycle
+4. **Documentation** - Update security policies based on findings
 
-## 🎭 What's Next?
+## 🔧 Advanced Configuration
 
-Now that you have top-secret intelligence, what's next?
+### Running Specific Modules
+```bash
+# Analyze only Docker containers
+sudo ./inspector-gadget.sh --containers-only
 
-✅ **Block sketchy IPs** 🚫  
-✅ **Tighten up your firewall** 🔥  
-✅ **Remove malware and rootkits** 🦠  
-✅ **Expose weak spots before bad actors do** 🔓  
-✅ **Monitor SSH attacks in real-time** 🚨  
-✅ **Calculate and improve your security score** 📊  
-✅ **Encrypt and secure your security reports** 🔐  
-✅ **Impress your friends with hacker-level insights** 🕶️
+# Focus on firewall analysis
+sudo ./inspector-gadget.sh --firewall-only
+
+# Generate detailed report
+sudo ./inspector-gadget.sh --verbose --output-dir ./security-reports
+```
+
+## 📊 Understanding the Risk Score
+
+Inspector-Gadget calculates a dynamic security risk score based on:
+
+- **Critical**: Privileged containers, open management ports
+- **High**: Weak firewall rules, excessive network exposure
+- **Medium**: Outdated configurations, non-standard setups
+- **Low**: Minor configuration improvements, best practice recommendations
+
+**Score Ranges:**
+- 🟢 **0-30**: Excellent security posture
+- 🟡 **31-60**: Good with room for improvement
+- 🟠 **61-80**: Moderate risk, action recommended
+- 🔴 **81-100**: High risk, immediate attention required
+
+## 🤝 Contributing
+
+We welcome contributions! Please feel free to:
+
+1. **Report Issues** - Found a bug? Let us know!
+2. **Feature Requests** - Have an idea? We'd love to hear it!
+3. **Pull Requests** - Code improvements are always welcome!
+4. **Documentation** - Help improve our docs!
+
+### Development Setup
+```bash
+git clone https://github.com/jlima8900/Inspector--Gadget.git
+cd Inspector--Gadget
+# Make your changes
+chmod +x inspector-gadget.sh
+# Test your changes
+sudo ./inspector-gadget.sh
+```
 
 ## 📜 License
 
-This project is free software, licensed under the GNU General Public License v3 (GPLv3). That means:
+This project is licensed under the **GNU General Public License v3.0** (GPLv3).
 
-- ✅ You can use, modify, and distribute it freely.
-- 🔄 But if you improve it, share it back with the community (no hoarding!).
+**This means:**
+- ✅ Free to use, modify, and distribute
+- 🔄 Share improvements with the community
+- 📖 Full license text available in [LICENSE](LICENSE) file
 
-⚠️ No warranty – if your coffee spills because of a security panic, it's on you! ☕
+⚠️ **Disclaimer**: This tool is provided as-is without warranty. Always test in a safe environment before production use.
 
-For the full legal stuff, check out the LICENSE file.
+## 🎯 Use Cases
 
-## 👤 About
+### System Administrators
+- Regular security audits
+- Compliance reporting
+- Infrastructure hardening
+- Incident response preparation
 
-Created by someone who just wants you to be safe in this wild cyber world.
+### DevOps Teams
+- Container security validation
+- CI/CD security gates
+- Infrastructure as Code verification
+- Security policy enforcement
 
-If this tool helped you, buy yourself a coffee – you deserve it! ☕
+### Security Teams
+- Vulnerability assessment
+- Risk analysis and reporting
+- Security baseline validation
+- Penetration testing preparation
 
-✅ If you read this far, you're already more secure than most people.  
-🕵️♂️ Run the script and let Inspector-Gadget do the rest! 🔍
+## 🆘 Support
+
+Having issues? Here's how to get help:
+
+1. **📚 Check Documentation** - Review this README thoroughly
+2. **🔍 Search Issues** - Look for similar problems in GitHub Issues
+3. **🐛 Report Bugs** - Create a new issue with detailed information
+4. **💬 Community Discussion** - Join our community discussions
+
+## 🔗 Related Tools
+
+- **Lynis** - Security auditing tool for Unix-based systems
+- **Docker Bench** - Docker security best practices checker
+- **Nmap** - Network discovery and security auditing
+- **OpenVAS** - Vulnerability assessment scanner
+
+## 🏆 Acknowledgments
+
+Created with security in mind for the cybersecurity community. Special thanks to all contributors and users who help make our digital infrastructure more secure.
 
 ---
 
-**Contact:** jlima8900@hotmail.com  
-**Repository:** https://github.com/jlima8900/Inspector--Gadget
+**Remember**: Security is a journey, not a destination. Regular monitoring and assessment are key to maintaining a robust security posture.
+
+🕵️‍♂️ **Ready to secure your infrastructure? Run Inspector-Gadget today!** 🔍
