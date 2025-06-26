@@ -2,7 +2,8 @@
 
 **Shitty Security & Exposure Analysis Tool**
 
-Inspector-Gadget is a comprehensive cybersecurity Swiss Army knife designed to investigate firewall rules, container security, and network exposure. This powerful bash script ensures your infrastructure isn't inadvertently exposing secrets or vulnerabilities to potential attackers.
+Inspector-Gadget is a comprehensive cybersecurity Swiss Army knife designed to investigate firewall rules, container security, and network exposure. 
+This bash script ensures your infrastructure isn't inadvertently exposing secrets or vulnerabilities to potential attackers.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Bash](https://img.shields.io/badge/Bash-4.0%2B-green.svg)](https://www.gnu.org/software/bash/)
